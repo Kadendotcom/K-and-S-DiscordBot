@@ -38,6 +38,14 @@ BOT_TOKEN=your_discord_bot_token_here
 npm start
 ```
 
+## Run In Development (Auto-Restart)
+
+```bash
+npm run dev
+```
+
+This uses `nodemon` to watch your files and automatically restart the bot when you save changes.
+
 If you do not want to use the script, you can also run:
 
 ```bash
