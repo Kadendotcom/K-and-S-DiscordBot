@@ -4,9 +4,13 @@ const {REST, Routes}= require('discord.js');
 const commands = [ 
 {
     name: 'hey',
-    description: 'Replies with hey',
-    name: 'bye',
-    description: 'Replies with bai',
+    description: 'Replies with hey'},
+    {name: 'bye',
+    description: 'Replies with bai'},
+    {name: 'k',
+    description: 'Info on K'},
+    {name: 's',
+    description: 'Info on S'
 },
 
 ];
@@ -25,7 +29,8 @@ const rest = new REST({version: '10'}).setToken(process.env.BOT_TOKEN);
         );
 
         console.log('Slash commands registered!')
+        
     }catch(error){
-        console.log('There was an error: ${error}');
+        console.error(`There was an error: ${error}`);
     }
 })();

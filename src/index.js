@@ -24,7 +24,7 @@ client.once('clientReady',(c) =>{
 //     message.reply("hello")
 // }
 // });
-client.once('interactionCreate',(interaction) =>{
+client.on('interactionCreate',(interaction) =>{
     if(!interaction.isChatInputCommand()) return;
 
     if(interaction.commandName=='hey'){
@@ -32,6 +32,12 @@ client.once('interactionCreate',(interaction) =>{
     }
     if(interaction.commandName=='bye'){
         interaction.reply('baiii!');
+    }
+    if(interaction.commandName=='s'){
+        interaction.reply('S is one of the Devs of K&S-Bot! S is a Computer Science student seeking internships. S is interested in ...');
+    }
+    if(interaction.commandName=='k'){
+        interaction.reply('K is one of the Devs of K&S-Bot! K is a Computer Science student seeking internships. K is interested in cybersecurity, computer vision, big data anaylsis, AI, automation and data security. K works in Java, JS, Python and C. ');
     }
 });
 client.login(token);
