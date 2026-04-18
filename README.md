@@ -49,5 +49,21 @@ This uses `nodemon` to watch your files and automatically restart the bot when y
 If you do not want to use the script, you can also run:
 
 ```bash
-node index.js
+node src/index.js
+```
+
+## Register New Commands 
+
+```bash
+npm run cmd
+```
+
+This command will run src/register_commands.js
+
+Run this command when registering new commands. It only needs to be run once to register all new commands
+
+If you don't want to use the npm script, run: 
+
+```bash
+node src/register_commands.js
 ```
